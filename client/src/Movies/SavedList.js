@@ -14,9 +14,9 @@ export default class SavedList extends Component {
       <div className="saved-list">
         <h3>Saved Movies:</h3>
         {this.props.list.map(movie => (
-          console.log(movie),
-          console.log(movie.id),
-          <span className="saved-movie" key={movie.id}>{movie.title}</span>
+          // console.log(movie),
+          // console.log(movie.id),
+          <span className="saved-movie" key={movie.id}><Link to={`/movies/${movie.id}`}>{movie.title}</Link></span>
         ))}
         <div className="home-button"><Link to="/">Home</Link></div>
       </div>
