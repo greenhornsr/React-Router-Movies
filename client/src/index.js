@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// importing BrowserRouter from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import './index.css';
 import App from './App';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+// below here, I Wrapped my App with Router to enable Route functionality for the whole app
+ReactDOM.render(<Router><App /></Router>, document.getElementById('root'));
